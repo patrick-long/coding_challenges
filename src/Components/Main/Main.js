@@ -5,7 +5,8 @@ import BoolToWord from '../Challenges/BoolToWord/BoolToWord';
 const Main = () => {
   return (
     <div className={styles.Main}>
-      <p>See if you can complete all of the Coding_Challenges!</p>
+      <p>I have completed all of the challenges here...</p>
+      <p>Have fun with what you input!</p>
       <BoolToWord />
     </div>
   )
