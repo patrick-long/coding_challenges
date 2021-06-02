@@ -3,6 +3,10 @@ import { useState } from 'react';
 
 const BoolToWord = () => {
 
+    const [state, setState] = useState({
+        isBool: ''
+    })
+
     const isBoolean = (str) => {
 
     }
