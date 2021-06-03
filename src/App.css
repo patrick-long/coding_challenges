@@ -3,7 +3,7 @@
 .App {
   text-align: center;
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .App-header {
@@ -17,4 +17,20 @@
   color: rgb(210, 210, 210);
   font-weight: 500;
 
+}
+
+.challenge-title {
+
+}
+
+.challenge-description {
+
+}
+
+.challenge-form {
+
+}
+
+.challenge-input {
+    
 }
