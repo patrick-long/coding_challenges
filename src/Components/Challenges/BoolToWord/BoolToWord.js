@@ -12,7 +12,7 @@ const BoolToWord = () => {
     }
 
     const onChange = () => {
-        
+
     }
 
     const onSubmit = event => {
@@ -20,7 +20,7 @@ const BoolToWord = () => {
 
     }
     return (
-        <div className={styles.BoolToWord}>
+        <div className="challenge-container">
             <h2 className="challenge-title">BoolToWord</h2>
             <p className="challenge-description">Input a boolean (true or false) value and return either "Yes" for true or "No" for false</p>
             <form className="challenge-form" onSubmit={onSubmit}>

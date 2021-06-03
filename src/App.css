@@ -19,12 +19,27 @@
 
 }
 
-.challenge-title {
+.challenges-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.challenge-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 5, 5, 0.2); 
+  width: 40%;
+}
+
+.challenge-title {
+  font-weight: 900;
 }
 
 .challenge-description {
-
+  font-weight: 300;
 }
 
 .challenge-form {
