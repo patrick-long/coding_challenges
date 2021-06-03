@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(148, 148, 148, 0.5); 
-  width: 40%;
+  width: 50%;
   margin-top: 3rem;
   padding: 1rem;
   border-radius: 10px;
@@ -52,10 +52,14 @@
   font-weight: 300;
 }
 
-/* .challenge-form {
-
+.challenge-form {
+  display: flex;
 }
 
-.challenge-input {
+.challenge-form > input, .challenge-form > button {
+  margin: 0 0.5rem;
+}
+
+/* .challenge-input {
     
 } */
