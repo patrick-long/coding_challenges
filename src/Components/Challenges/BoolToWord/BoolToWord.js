@@ -4,11 +4,12 @@ import { useState } from 'react';
 const BoolToWord = () => {
 
     const [state, setState] = useState({
-        input: ''
+        input: '',
+        result: ''
     })
 
     const isBoolean = (str) => {
-
+        return str;
     }
 
     const handleChange = e => {
@@ -18,10 +19,14 @@ const BoolToWord = () => {
         }))
     }
 
-    const handleSubmit = event => {
-        event.preventDefault();
-
+    const handleSubmit = e => {
+        e.preventDefault();
+        const challengeResult = isBoolean(state.input);
+        setState({
+            result: challengeResult
+        })
     }
+
     return (
         <div className="challenge-container">
             <h2 className="challenge-title">BoolToWord</h2>
@@ -33,6 +38,9 @@ const BoolToWord = () => {
                     Result
                 </button>
             </form>
+            <p className="challenge-result">
+                {state.result}
+            </p>
         </div>
     )
 }
