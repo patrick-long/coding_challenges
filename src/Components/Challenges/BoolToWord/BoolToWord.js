@@ -11,11 +11,14 @@ const BoolToWord = () => {
 
     }
 
-    const onChange = () => {
-
+    const handleChange = e => {
+        setState(prevState => ({
+            ...prevState,
+            [e.target.name]: e.target.value
+        }))
     }
 
-    const onSubmit = event => {
+    const handleSubmit = event => {
         event.preventDefault();
 
     }
@@ -23,8 +26,8 @@ const BoolToWord = () => {
         <div className="challenge-container">
             <h2 className="challenge-title">BoolToWord</h2>
             <p className="challenge-description">Input a boolean (true or false) value and return either "Yes" for true or "No" for false</p>
-            <form className="challenge-form" onSubmit={onSubmit}>
-                <input type="text" value={state.input} onChange={onChange} name="challenge-input" id="bool-to-word" className="form-control" placeholder='"True" or "False"'
+            <form className="challenge-form" onSubmit={handleSubmit}>
+                <input type="text" value={state.input} onChange={handleChange} name="input" id="bool-to-word" className="form-control challenge-input" placeholder='"True" or "False"'
                 />
                 <button type="submit" className="btn btn-success">
                     Result
@@ -35,3 +38,4 @@ const BoolToWord = () => {
 }
 
 export default BoolToWord;
+
