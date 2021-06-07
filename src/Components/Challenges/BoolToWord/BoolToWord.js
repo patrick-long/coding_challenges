@@ -36,7 +36,7 @@ const BoolToWord = () => {
 
     return (
         <div className="challenge-container">
-            <h2 className="challenge-title">BoolToWord</h2>
+            <h2 className="challenge-title">Convert a boolean to a word</h2>
             <p className="challenge-description">Input a boolean (true or false) value and return either "Yes" for true or "No" for false</p>
             <form className="challenge-form" onSubmit={handleSubmit}>
                 <input type="text" value={state.input} onChange={handleChange} name="input" id="bool-to-word" className="form-control challenge-input" placeholder='"true" or "false"'
