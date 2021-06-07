@@ -54,10 +54,23 @@
 
 .challenge-form {
   display: flex;
+  margin-top: 1rem;
 }
 
 .challenge-form > input, .challenge-form > button {
   margin: 0 0.5rem;
+}
+
+.challenges-container p {
+  margin: 0;
+}
+
+.challenges-container > p:first-child {
+  margin-top: 2rem;
+}
+
+#challenge-result { 
+  margin: 1rem 0 0 0;
 }
 
 /* .challenge-input {

@@ -45,7 +45,7 @@ const BoolToWord = () => {
                     Result
                 </button>
             </form>
-            <p className="challenge-result">
+            <p id="challenge-result">
                 {state.result}
             </p>
         </div>
