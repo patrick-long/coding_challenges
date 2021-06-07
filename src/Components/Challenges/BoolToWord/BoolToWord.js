@@ -28,9 +28,10 @@ const BoolToWord = () => {
     const handleSubmit = e => {
         e.preventDefault();
         const challengeResult = isBoolean(state.input);
-        setState({
+        setState(prevState => ({
+            input: prevState.input,
             result: challengeResult
-        })
+        }))
     }
 
     return (
