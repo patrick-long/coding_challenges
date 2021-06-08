@@ -11,9 +11,12 @@ const NumToReverseArray = () => {
     const numToReverseArrayFunction = num => {
         const reversedNumbers = num.toString().split('').reverse();
         const results = reversedNumbers.map(nums => {
-          return parseInt(nums);
+            return parseInt(nums);
         })
         return results;
+        // } else {
+        //     return `Please try typing in a number instead`
+        // }
       }
 
     const handleChange = e => {
@@ -43,9 +46,18 @@ const NumToReverseArray = () => {
                     Result
                 </button>
             </form>
-            {state.result.map(res => (
-                <p>{res}</p>
-            ))}
+            {
+                (state.result.length > 0) ?
+                    <p id="challenge-result">[{state.result.map((res, idx) => {
+                        if (idx < (state.result.length - 1)) {
+                            return `${res}, `
+                        } else {
+                            return `${res}`
+                        }
+                    })}]</p>
+                :
+                    null
+            }
         </div>
     )
 }
