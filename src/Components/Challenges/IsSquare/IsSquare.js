@@ -9,15 +9,7 @@ const IsSquare = () => {
     })
 
     const isSquareFunction = num => {
-        if (num < 0) {
-            return `No`;
-        } else if (num / Math.sqrt(num) == Math.sqrt(num)) {
-            return `Yes`;
-        } else if (num === 0) {
-            return `Yes`;
-        } else {
-            return `No`;
-        }
+        return Math.sqrt(num) % 1 === 0;
       } 
 
     const handleChange = e => {
@@ -47,7 +39,7 @@ const IsSquare = () => {
                     Result
                 </button>
             </form>
-            <p id="challenge-result">{state.result}</p>
+            <p id="challenge-result">{state.result.toString()}</p>
         </div>
     )
 }
