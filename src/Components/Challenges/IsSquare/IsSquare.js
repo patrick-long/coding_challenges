@@ -9,7 +9,15 @@ const IsSquare = () => {
     })
 
     const isSquareFunction = num => {
-        
+        if (num < 0) {
+            return `No`;
+        } else if (num / Math.sqrt(num) == Math.sqrt(num)) {
+            return `Yes`;
+        } else if (num === 0) {
+            return `Yes`;
+        } else {
+            return `No`;
+        }
       } 
 
     const handleChange = e => {
@@ -33,12 +41,13 @@ const IsSquare = () => {
             <h2 className="challenge-title">Is it squareable?</h2>
             <p className="challenge-description">Input a number to see if it has a whole square root</p>
             <form className="challenge-form" onSubmit={handleSubmit}>
-                <input type="text" value={state.input} onChange={handleChange} name="input" id="num-to-reverse-array" className="form-control challenge-input" placeholder="Your favorite number"
+                <input type="text" value={state.input} onChange={handleChange} name="input" id="is-square" className="form-control challenge-input" placeholder="Your favorite number"
                 />
                 <button type="submit" className="btn btn-success">
                     Result
                 </button>
             </form>
+            <p id="challenge-result">{state.result}</p>
         </div>
     )
 }
