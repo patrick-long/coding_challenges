@@ -14,10 +14,7 @@ const NumToReverseArray = () => {
             return parseInt(nums);
         })
         return results;
-        // } else {
-        //     return `Please try typing in a number instead`
-        // }
-      }
+      } 
 
     const handleChange = e => {
         setState(prevState => ({

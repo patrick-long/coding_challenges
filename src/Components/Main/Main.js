@@ -3,6 +3,7 @@ import styles from './Main.module.css';
 import BoolToWord from '../Challenges/BoolToWord/BoolToWord';
 import ReverseString from '../Challenges/ReverseString/ReverseString';
 import NumToReverseArray from '../Challenges/NumToReverseArray/NumToReverseArray';
+import IsSquare from '../Challenges/IsSquare/IsSquare';
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <BoolToWord />
       <ReverseString />
       <NumToReverseArray />
+      <IsSquare />
     </div>
   )
 };
