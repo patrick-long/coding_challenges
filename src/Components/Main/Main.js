@@ -5,6 +5,7 @@ import ReverseString from '../Challenges/ReverseString/ReverseString';
 import NumToReverseArray from '../Challenges/NumToReverseArray/NumToReverseArray';
 import IsSquare from '../Challenges/IsSquare/IsSquare';
 import SumOfArray from '../Challenges/SumOfArray/SumOfArray';
+import NumberofMilliseconds from '../Challenges/NumberofMilliseconds/NumberofMilliseconds';
 
 const Main = () => {
   return (
