@@ -8,7 +8,8 @@ const NumberofMilliseconds = () => {
     })
 
     const numberOfMillisecondsFunction = str => {
-        return str.split('').reverse().join('');
+        const splitString = str.split(', ');
+        return ((splitString[0] * 3600) + (splitString[1] * 60) + splitString[2]) * 1000
     }
 
     const handleChange = e => {
@@ -30,10 +31,10 @@ const NumberofMilliseconds = () => {
 
     return (
         <div className="challenge-container">
-            <h2 className="challenge-title">Reverse a string</h2>
-            <p className="challenge-description">Input a string to reverse</p>
+            <h2 className="challenge-title">Number of Milliseconds</h2>
+            <p className="challenge-description">Input an amount (hour, minutes, seconds) separated by commas to calculate in milliseconds</p>
             <form className="challenge-form" onSubmit={handleSubmit}>
-                <input type="text" value={state.input} onChange={handleChange} name="input" id="reverse-string" className="form-control challenge-input" placeholder="Input string here"
+                <input type="text" value={state.input} onChange={handleChange} name="input" id="reverse-string" className="form-control challenge-input" placeholder="Input amount here"
                 />
                 <button type="submit" className="btn btn-success">
                     Result
