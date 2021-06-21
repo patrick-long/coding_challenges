@@ -17,6 +17,7 @@ const Main = () => {
       <NumToReverseArray />
       <IsSquare />
       <SumOfArray />
+      <NumberofMilliseconds />
     </div>
   )
 };
