@@ -8,7 +8,10 @@ const SumOfArray = () => {
     })
 
     const sumOfArrayFunction = str => {
-        console.log(str);
+        const myArray = str.toString();
+        myArray.replace(/\s/g, '');
+        console.log(typeof(myArray));
+        console.log(myArray);
     }
 
     const handleChange = e => {
