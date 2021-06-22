@@ -6,6 +6,7 @@ import NumToReverseArray from '../Challenges/NumToReverseArray/NumToReverseArray
 import IsSquare from '../Challenges/IsSquare/IsSquare';
 import SumOfArray from '../Challenges/SumOfArray/SumOfArray';
 import NumberofMilliseconds from '../Challenges/NumberofMilliseconds/NumberofMilliseconds';
+import OddOrEven from '../Challenges/OddOrEven/OddOrEven';
 
 const Main = () => {
   return (
@@ -18,6 +19,7 @@ const Main = () => {
       <IsSquare />
       <SumOfArray />
       <NumberofMilliseconds />
+      <OddOrEven />
     </div>
   )
 };
