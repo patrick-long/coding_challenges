@@ -34,7 +34,7 @@ const NumberofMilliseconds = () => {
             <h2 className="challenge-title">Number of Milliseconds</h2>
             <p className="challenge-description">Input an amount (hour, minutes, seconds) separated by commas to calculate in milliseconds</p>
             <form className="challenge-form" onSubmit={handleSubmit}>
-                <input type="text" value={state.input} onChange={handleChange} name="input" id="reverse-string" className="form-control challenge-input" placeholder="Input amount here"
+                <input type="text" value={state.input} onChange={handleChange} name="input" className="form-control challenge-input" placeholder="Input amount here"
                 />
                 <button type="submit" className="btn btn-success">
                     Result
