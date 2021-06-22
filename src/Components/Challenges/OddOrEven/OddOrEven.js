@@ -7,6 +7,17 @@ const OddOrEven = () => {
         result: ''
     })
 
+    const oddOrEvenFunction = (num) => {
+        if (parseInt(num)) {
+            const isNumber = parseInt(num);
+            return isNumber % 2 ? 'Odd' : 'Even';
+        } else if (num === '0') {
+            return 'Interestingly, but technically, even'
+        } else {
+            return 'Please input a number'
+        }
+    }
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
@@ -16,7 +27,7 @@ const OddOrEven = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        const challengeResult = numberOfMillisecondsFunction(state.input);
+        const challengeResult = oddOrEvenFunction(state.input);
         setState(prevState => ({
             input: prevState.input,
             result: challengeResult
