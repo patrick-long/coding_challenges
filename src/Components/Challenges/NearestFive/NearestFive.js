@@ -2,6 +2,11 @@ import {useState} from 'react';
 
 const NearestFive = () => {
 
+    const [state, setState] = useState({
+        input: '',
+        result: ''
+    });
+
     const handleSubmit = e => {
         e.preventDefault();
         const challengeResult = nearestFiveFunction(state.input);
