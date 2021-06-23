@@ -1,12 +1,30 @@
 import {useState} from 'react';
 
 const NearestFive = () => {
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        const challengeResult = nearestFiveFunction(state.input);
+        setState(prevState => ({
+            input: prevState.input,
+            result: challengeResult
+        }))
+    }
+
     return (
         <div className="challenge-container">
             <h2 className="challenge-title">Nearest Multiple of 5</h2>
             <p className="challenge-description">Input a number to round up to the nearest multiple of 5</p>
-            <form className="challenge-form" onSubmit={handleSubmit}>
-                <input type="text" value={state.input} onChange={handleChange} name="input" className="form-control challenge-input" placeholder="Input number here"
+            <form 
+                className="challenge-form" 
+                onSubmit={handleSubmit}>
+                <input 
+                    type="text" 
+                    value={state.input} 
+                    onChange={e => setState(e.target.value)} 
+                    name="input" 
+                    className="form-control challenge-input" 
+                    placeholder="Input number here"
                 />
                 <button type="submit" className="btn btn-success">
                     Result
