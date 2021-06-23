@@ -7,6 +7,25 @@ const NearestFive = () => {
         result: ''
     });
 
+    const nearestFiveFunction = (num) => {
+        if (num == 0) {
+            return 5
+        } else if (parseInt(num)) {
+            const nowNumber = parseInt(num);
+            console.log(nowNumber, typeof nowNumber);
+            return Math.ceil(nowNumber/5) * 5;
+        } else {
+            return 'Please input a number'
+        }
+    }
+
+    const handleChange = e => {
+        setState(prevState => ({
+            ...prevState,
+            [e.target.name]: e.target.value
+        }))
+    }
+
     const handleSubmit = e => {
         e.preventDefault();
         const challengeResult = nearestFiveFunction(state.input);
@@ -26,7 +45,7 @@ const NearestFive = () => {
                 <input 
                     type="text" 
                     value={state.input} 
-                    onChange={e => setState(e.target.value)} 
+                    onChange={handleChange} 
                     name="input" 
                     className="form-control challenge-input" 
                     placeholder="Input number here"
