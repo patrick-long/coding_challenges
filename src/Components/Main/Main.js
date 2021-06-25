@@ -8,6 +8,7 @@ import SumOfArray from '../Challenges/SumOfArray/SumOfArray';
 import NumberofMilliseconds from '../Challenges/NumberofMilliseconds/NumberofMilliseconds';
 import OddOrEven from '../Challenges/OddOrEven/OddOrEven';
 import NearestFive from '../Challenges/NearestFive/NearestFive';
+import AlternateCapitalization from '../Challenges/AlternateCapitalization/AlternateCapitalization';
 
 const Main = () => {
   return (
@@ -22,6 +23,7 @@ const Main = () => {
       <NumberofMilliseconds />
       <OddOrEven />
       <NearestFive />
+      <AlternateCapitalization />
     </div>
   )
 };
