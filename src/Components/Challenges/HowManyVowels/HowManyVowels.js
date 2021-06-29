@@ -1,6 +1,23 @@
 import {useState} from 'react'; 
 
 const HowManyVowels = () => {
+
+    const handleChange = e => {
+        setState(prevState => ({
+            ...prevState,
+            [e.target.name]: e.target.value
+        }))
+    }
+    
+    const handleSubmit = e => {
+    e.preventDefault();
+    const challengeResult = alternateCapitalizationFunction(state.input);
+    setState(prevState => ({
+        input: prevState.input,
+        result: challengeResult
+    }))
+    }
+
     return (
         <div className="challenge-container">
             <h2 className="challenge-title">How many vowels in a string?</h2>
