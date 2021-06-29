@@ -9,6 +9,7 @@ import NumberofMilliseconds from '../Challenges/NumberofMilliseconds/NumberofMil
 import OddOrEven from '../Challenges/OddOrEven/OddOrEven';
 import NearestFive from '../Challenges/NearestFive/NearestFive';
 import AlternateCapitalization from '../Challenges/AlternateCapitalization/AlternateCapitalization';
+import HowManyVowels from '../Challenges/HowManyVowels/HowManyVowels';
 
 const Main = () => {
   return (
@@ -24,6 +25,7 @@ const Main = () => {
       <OddOrEven />
       <NearestFive />
       <AlternateCapitalization />
+      <HowManyVowels />
     </div>
   )
 };
