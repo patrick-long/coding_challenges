@@ -2,6 +2,23 @@ import {useState} from 'react';
 
 const HowManyVowels = () => {
 
+    const [state, setState] = useState({
+        input: '',
+        result: ''
+    });
+    
+    const howManyVowelsFunction = (str) => {
+        var vowelsCount = 0;
+        const splitString = str.split('');
+        splitString.filter(char => {
+          if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+            vowelsCount++;
+          } 
+        }) 
+        
+        return vowelsCount;
+    };
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
@@ -11,7 +28,7 @@ const HowManyVowels = () => {
     
     const handleSubmit = e => {
     e.preventDefault();
-    const challengeResult = alternateCapitalizationFunction(state.input);
+    const challengeResult = HowManyVowelsFunction(state.input);
     setState(prevState => ({
         input: prevState.input,
         result: challengeResult
