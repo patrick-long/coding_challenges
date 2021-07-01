@@ -8,7 +8,7 @@ const ShortestWord = () => {
     });
     
     const shortestWordFunction = (str) => {
-        
+        console.log(str);
     };
 
     const handleChange = e => {
@@ -30,8 +30,8 @@ const ShortestWord = () => {
 
     return (
         <div className="challenge-container">
-            <h2 className="challenge-title">How many vowels in a string?</h2>
-            <p className="challenge-description">Input a string to return how many vowels there are in the string</p>
+            <h2 className="challenge-title">Find the shortest word in a string</h2>
+            <p className="challenge-description">Input a string to return the shortest word</p>
             <form 
                 className="challenge-form" 
                 onSubmit={handleSubmit}>
