@@ -10,6 +10,7 @@ import OddOrEven from '../Challenges/OddOrEven/OddOrEven';
 import NearestFive from '../Challenges/NearestFive/NearestFive';
 import AlternateCapitalization from '../Challenges/AlternateCapitalization/AlternateCapitalization';
 import HowManyVowels from '../Challenges/HowManyVowels/HowManyVowels';
+import ShortestWord from '../Challenges/ShortestWord/ShortestWord';
 
 const Main = () => {
   return (
@@ -26,6 +27,7 @@ const Main = () => {
       <NearestFive />
       <AlternateCapitalization />
       <HowManyVowels />
+      <ShortestWord />
     </div>
   )
 };
