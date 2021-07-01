@@ -27,12 +27,12 @@ const HowManyVowels = () => {
     }
     
     const handleSubmit = e => {
-    e.preventDefault();
-    const challengeResult = howManyVowelsFunction(state.input);
-    setState(prevState => ({
-        input: prevState.input,
-        result: challengeResult
-    }))
+        e.preventDefault();
+        const challengeResult = howManyVowelsFunction(state.input);
+        setState(prevState => ({
+            input: prevState.input,
+            result: challengeResult
+        }))
     }
 
     return (
