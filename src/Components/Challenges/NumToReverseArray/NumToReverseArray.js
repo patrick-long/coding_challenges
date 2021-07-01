@@ -1,4 +1,4 @@
-import styles from './NumToReverseArray.module.css';
+// import styles from './NumToReverseArray.module.css';
 import { useState } from 'react';
 
 const NumToReverseArray = () => {

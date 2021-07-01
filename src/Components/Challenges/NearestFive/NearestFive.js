@@ -8,7 +8,7 @@ const NearestFive = () => {
     });
 
     const nearestFiveFunction = (num) => {
-        if (num == 0) {
+        if (num === 0) {
             return 5
         } else if (parseInt(num)) {
             const nowNumber = parseInt(num);

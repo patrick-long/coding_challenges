@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Main.module.css';
+// import styles from './Main.module.css';
 import BoolToWord from '../Challenges/BoolToWord/BoolToWord';
 import ReverseString from '../Challenges/ReverseString/ReverseString';
 import NumToReverseArray from '../Challenges/NumToReverseArray/NumToReverseArray';

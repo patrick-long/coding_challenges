@@ -10,8 +10,8 @@ const HowManyVowels = () => {
     const howManyVowelsFunction = (str) => {
         var vowelsCount = 0;
         const splitString = str.split('');
-        splitString.filter(char => {
-          if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+        splitString.forEach(char => {
+          if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
             vowelsCount++;
           } 
         }) 

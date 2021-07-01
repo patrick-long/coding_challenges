@@ -1,4 +1,4 @@
-import styles from './BoolToWord.module.css';
+// import styles from './BoolToWord.module.css';
 import { useState } from 'react';
 
 const BoolToWord = () => {

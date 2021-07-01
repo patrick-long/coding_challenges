@@ -12,7 +12,7 @@ const AlternateCapitalization = () => {
     const result1 = [];
     const result2 = [];
     for (let i = 0; i < s.length; i++) {
-      if (i % 2 == 0) {
+      if (i % 2 === 0) {
         const capitalized = splitString[i].toUpperCase();
         result1.push(capitalized);
       } else {
@@ -21,7 +21,7 @@ const AlternateCapitalization = () => {
     }
       
     for (let i = 0; i < s.length; i++) {
-      if (i % 2 == 1) {
+      if (i % 2 === 1) {
         const capitalized = splitString[i].toUpperCase();
         result2.push(capitalized);
       } else {

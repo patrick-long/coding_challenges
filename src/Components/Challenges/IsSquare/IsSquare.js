@@ -1,4 +1,4 @@
-import styles from './IsSquare.module.css';
+// import styles from './IsSquare.module.css';
 import { useState } from 'react';
 
 const IsSquare = () => {
