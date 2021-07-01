@@ -1,3 +1,4 @@
+import { waitForDomChange } from '@testing-library/react';
 import {useState} from 'react'; 
 
 const ShortestWord = () => {
@@ -8,7 +9,10 @@ const ShortestWord = () => {
     });
     
     const shortestWordFunction = (str) => {
-        console.log(str);
+        const wordsArray = str.split(' ');
+        const lengthArray = wordsArray.map(word => word.length);
+        const shortestWordIndex = lengthArray.indexOf(Math.min(...lengthArray));
+        return wordsArray[shortestWordIndex];
     };
 
     const handleChange = e => {
