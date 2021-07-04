@@ -73,6 +73,14 @@
   margin: 1rem 0 0 0;
 }
 
+footer > h4 {
+  width: 60%;
+  margin: 1.5rem auto;
+  font-size: 1.2rem;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.8rem;
+}
+
 .coding-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
