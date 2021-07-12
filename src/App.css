@@ -36,7 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(148, 148, 148, 0.5); 
+  background-color: rgba(148, 148, 148, 0.9); 
   width: 50%;
   margin-top: 3rem;
   padding: 1rem;
@@ -53,7 +53,8 @@
 }
 
 .challenge-description {
-  font-weight: 300;
+  font-weight: 400;
+  color: white;
 }
 
 .challenge-form {
