@@ -20,10 +20,15 @@
   padding: 0 0.5rem;
 }
 
-.challenges-container {
+.challenges-container1, .challenges-container2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.challenges-container1 {
+  background: url('imgs/coding-challenges-bg1.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .challenge-container {

@@ -14,12 +14,15 @@ import ShortestWord from '../Challenges/ShortestWord/ShortestWord';
 
 const Main = () => {
   return (
-    <div className="challenges-container">
+    <>
+    <div className="challenges-container1">
       <p>I have completed all of the challenges here...</p>
       <p>Have fun with what you input!</p>
       <BoolToWord />
       <ReverseString />
       <NumToReverseArray />
+    </div>
+    <div className="challenges-container2">
       <IsSquare />
       <SumOfArray />
       <NumberofMilliseconds />
@@ -29,6 +32,7 @@ const Main = () => {
       <HowManyVowels />
       <ShortestWord />
     </div>
+    </>
   )
 };
 
