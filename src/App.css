@@ -26,6 +26,18 @@
   align-items: center;
 }
 
+.challenges-container1 > p {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.7)
+}
+
+.challenges-container1 > p:first-child {
+  margin-top: 2rem;
+}
+
 .challenges-container1 {
   background: url('imgs/coding-challenges-bg1.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -38,7 +50,7 @@
   align-items: center;
   background-color: rgba(148, 148, 148, 0.9); 
   width: 50%;
-  margin-top: 3rem;
+  margin: 1.5rem 0;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -64,14 +76,6 @@
 
 .challenge-form > input, .challenge-form > button {
   margin: 0 0.5rem;
-}
-
-.challenges-container p {
-  margin: 0;
-}
-
-.challenges-container > p:first-child {
-  margin-top: 2rem;
 }
 
 #challenge-result { 
