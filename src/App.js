@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h3>Welcome to Coding_Challenges!</h3>
+        <button className="btn btn-secondary">Log In</button>
       </header>
       <Main />
       <footer>
