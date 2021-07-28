@@ -7,11 +7,21 @@ const SumDigits = () => {
         result: ''
     });
     
-    const shortestWordFunction = (str) => {
-        const wordsArray = str.split(' ');
-        const lengthArray = wordsArray.map(word => word.length);
-        const shortestWordIndex = lengthArray.indexOf(Math.min(...lengthArray));
-        return wordsArray[shortestWordIndex];
+    const sumDigitsFunction = (number) => {
+        if (Math.sign(number) === 1) {
+          const numberArray = number.toString().split('');
+          let total = 0;
+          const newNumbers = numberArray.map(num => parseInt(num));
+          newNumbers.map(num => total += num);
+          return total;
+        } else if (Math.sign(number) === -1) {
+          const newNum = -number;
+          const numberArray = newNum.toString().split('');
+          let total = 0;
+          const newNumbers = numberArray.map(num => parseInt(num));
+          newNumbers.map(num => total += num);
+          return total;
+        }
     };
 
     const handleChange = e => {
@@ -30,7 +40,7 @@ const SumDigits = () => {
         }))
     }
 
-    
+
     return (
         <div></div>
     )
