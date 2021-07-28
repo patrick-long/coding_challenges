@@ -33,7 +33,7 @@ const SumDigits = () => {
     
     const handleSubmit = e => {
         e.preventDefault();
-        const challengeResult = shortestWordFunction(state.input);
+        const challengeResult = sumDigitsFunction(state.input);
         setState(prevState => ({
             input: prevState.input,
             result: challengeResult

@@ -11,6 +11,7 @@ import NearestFive from '../Challenges/NearestFive/NearestFive';
 import AlternateCapitalization from '../Challenges/AlternateCapitalization/AlternateCapitalization';
 import HowManyVowels from '../Challenges/HowManyVowels/HowManyVowels';
 import ShortestWord from '../Challenges/ShortestWord/ShortestWord';
+import SumDigits from '../Challenges/SumDigits/SumDigits';
 
 const Main = () => {
   return (
@@ -31,6 +32,7 @@ const Main = () => {
       <AlternateCapitalization />
       <HowManyVowels />
       <ShortestWord />
+      <SumDigits />
     </div>
     </>
   )
