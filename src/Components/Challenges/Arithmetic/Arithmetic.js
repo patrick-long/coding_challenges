@@ -7,7 +7,11 @@ const Arithmetic = () => {
         result: ''
     });
 
-    const arithmeticFunction = (a, b, operator) => {
+    const arithmeticFunction = (str) => {
+        const useableVariables = str.split(', ');
+        const a = parseInt(useableVariables[0]);
+        const b = parseInt(useableVariables[1]);
+        const operator = useableVariables[2];
         if (operator === 'add') {
             return a + b
         } else if (operator === 'subtract') {
