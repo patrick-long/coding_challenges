@@ -12,6 +12,7 @@ import AlternateCapitalization from '../Challenges/AlternateCapitalization/Alter
 import HowManyVowels from '../Challenges/HowManyVowels/HowManyVowels';
 import ShortestWord from '../Challenges/ShortestWord/ShortestWord';
 import SumDigits from '../Challenges/SumDigits/SumDigits';
+import Arithmetic from '../Challenges/Arithmetic/Arithmetic';
 
 const Main = () => {
   return (
@@ -33,6 +34,7 @@ const Main = () => {
       <HowManyVowels />
       <ShortestWord />
       <SumDigits />
+      <Arithmetic />
     </div>
     </>
   )
