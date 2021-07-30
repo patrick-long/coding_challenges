@@ -13,6 +13,7 @@ import HowManyVowels from '../Challenges/HowManyVowels/HowManyVowels';
 import ShortestWord from '../Challenges/ShortestWord/ShortestWord';
 import SumDigits from '../Challenges/SumDigits/SumDigits';
 import Arithmetic from '../Challenges/Arithmetic/Arithmetic';
+import IsIsogram from '../Challenges/IsIsogram/IsIsogram';
 
 const Main = () => {
   return (
@@ -35,6 +36,7 @@ const Main = () => {
       <ShortestWord />
       <SumDigits />
       <Arithmetic />
+      <IsIsogram />
     </div>
     </>
   )
