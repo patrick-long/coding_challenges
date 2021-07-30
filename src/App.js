@@ -12,9 +12,9 @@ function App() {
       <footer>
         <h4>Here are some of the most popular coding challenge websites to help you learn algorithms, data structures and other fun coding stuff. Enjoy!</h4>
         <div className="coding-links">
-          <a href="https://www.codewars.com">CodeWars</a>  
-          <a href="https://www.edabit.com">Edabit</a>
-          <a href="https://www.hackerrank.com">HackerRank</a>
+          <a target="_blank" href="https://www.codewars.com">CodeWars</a>  
+          <a target="_blank" href="http://www.edabit.com">Edabit</a>
+          <a target="_blank" href="https://www.hackerrank.com">HackerRank</a>
         </div>
       </footer>
     </div>
