@@ -12,11 +12,11 @@ const IsIsogram = () => {
         for (let i = 0; i < newStr.length; i++) {
           for (let j = i + 1; j < newStr.length; j++) {
             if (newStr[i] === newStr[j]) {
-              return false
+              return 'false'
             } 
           }
         }
-        return true
+        return 'true'
     }
 
     const handleChange = e => {
