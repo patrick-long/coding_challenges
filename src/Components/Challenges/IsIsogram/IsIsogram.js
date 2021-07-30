@@ -2,7 +2,10 @@ import { useState } from 'react';
 
 const IsIsogram = () => {
 
-    
+    const [state, setState] = useState({
+        input: '',
+        result: ''
+    });
 
     const handleChange = e => {
         setState(prevState => ({
@@ -13,7 +16,7 @@ const IsIsogram = () => {
     
     const handleSubmit = e => {
         e.preventDefault();
-        const challengeResult = arithmeticFunction(state.input);
+        const challengeResult = isIsogramFunction(state.input);
         setState(prevState => ({
             input: prevState.input,
             result: challengeResult
