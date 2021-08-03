@@ -14,6 +14,7 @@ import ShortestWord from '../Challenges/ShortestWord/ShortestWord';
 import SumDigits from '../Challenges/SumDigits/SumDigits';
 import Arithmetic from '../Challenges/Arithmetic/Arithmetic';
 import IsIsogram from '../Challenges/IsIsogram/IsIsogram';
+import CamelCasing from '../Challenges/CamelCasing/CamelCasing';
 
 const Main = () => {
   return (
@@ -37,6 +38,7 @@ const Main = () => {
       <SumDigits />
       <Arithmetic />
       <IsIsogram />
+      <CamelCasing />
     </div>
     </>
   )
