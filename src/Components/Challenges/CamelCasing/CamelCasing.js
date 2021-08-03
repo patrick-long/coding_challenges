@@ -7,12 +7,16 @@ const CamelCasing = () => {
         result: ''
     });
 
+    const camelCasingFunction = (str) => {
+        return str.replace(/([A-Z])/g, ' $1');
+    };
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
             [e.target.name]: e.target.value
-        }))
-    }
+        }));
+    };
     
     const handleSubmit = e => {
         e.preventDefault();
@@ -20,8 +24,8 @@ const CamelCasing = () => {
         setState(prevState => ({
             input: prevState.input,
             result: challengeResult
-        }))
-    }
+        }));
+    };
 
 
     return (
@@ -47,7 +51,7 @@ const CamelCasing = () => {
                 {state.result}
             </p>
         </div>
-    )
+    );
 };
 
 export default CamelCasing;
