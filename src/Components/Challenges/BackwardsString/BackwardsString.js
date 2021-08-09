@@ -8,3 +8,4 @@ const BackwardsString = () => {
     )
 }
 
+export default BackwardsString;
