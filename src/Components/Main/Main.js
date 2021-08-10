@@ -32,11 +32,13 @@ const Main = () => {
       <NumberofMilliseconds />
       <OddOrEven />
     </div>
-    <div className="challenges-container">
+    <div className="challenges-container3">
       <NearestFive />
       <AlternateCapitalization />
       <HowManyVowels />
       <ShortestWord />
+    </div>
+    <div className="challenges-container4">
       <SumDigits />
       <Arithmetic />
       <IsIsogram />
