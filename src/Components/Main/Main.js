@@ -31,6 +31,8 @@ const Main = () => {
       <SumOfArray />
       <NumberofMilliseconds />
       <OddOrEven />
+    </div>
+    <div className="challenges-container3">
       <NearestFive />
       <AlternateCapitalization />
       <HowManyVowels />
