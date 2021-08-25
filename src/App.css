@@ -35,8 +35,15 @@
 }
 
 .animation1, .animation2 {
-  height: 42vh;
+  height: 20vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation2 {
+  height: 30vh;
 }
 
 .challenges-container1 > p:first-child {
