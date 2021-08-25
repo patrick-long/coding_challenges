@@ -26,12 +26,17 @@
   align-items: center;
 }
 
-.challenges-container1 > p {
+.animation1 > p, .animation2 > p {
   color: white;
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
   background: rgba(0, 0, 0, 0.7)
+}
+
+.animation1, .animation2 {
+  height: 42vh;
+  overflow: hidden;
 }
 
 .challenges-container1 > p:first-child {
@@ -101,3 +106,5 @@ footer > h4 {
   width: 50%;
   margin: 1.5rem auto;
 }
+
+/* Start working on CSS animations for site */
