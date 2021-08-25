@@ -20,8 +20,12 @@ const Main = () => {
   return (
     <>
     <div className="challenges-container1">
-      <p>I have completed all of the challenges here...</p>
-      <p>Have fun with what you input!</p>
+      <div className="animation1">
+        <p>I have completed all of the challenges here...</p>
+      </div>
+      <div className="animation2">
+        <p>Have fun with what you input!</p>
+      </div>
       <BoolToWord />
       <ReverseString />
       <NumToReverseArray />
