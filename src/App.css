@@ -26,48 +26,6 @@
   align-items: center;
 }
 
-.animation1 > p, .animation2 > p {
-  color: white;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 0;
-  background: rgba(0, 0, 0, 0.7)
-}
-
-.animation1, .animation2 {
-  height: 20vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.animation2 {
-  height: 30vh;
-}
-
-.animation1 {
-  animation-name: slideInRight;
-  animation-duration: 3s;
-}
-
-.animation2 {
-  animation-name: slideInLeft;
-  animation-duration: 5s;
-}
-
-@keyframes slideInRight {
-  0% {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  100% {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 .challenges-container1 > p:first-child {
   margin-top: 2rem;
 }
@@ -137,3 +95,57 @@ footer > h4 {
 }
 
 /* Start working on CSS animations for site */
+
+.animation1 > p, .animation2 > p {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.7)
+}
+
+.animation1, .animation2 {
+  height: 20vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation2 {
+  height: 30vh;
+}
+
+.animation1 {
+  animation-name: slideInRight;
+  animation-duration: 3.5s;
+}
+
+.animation2 {
+  animation-name: slideInLeft;
+  animation-duration: 4s;
+}
+
+@keyframes slideInRight {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
