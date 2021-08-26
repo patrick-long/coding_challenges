@@ -47,13 +47,25 @@
 }
 
 .animation1 {
-  animation-name: slideInLeft;
+  animation-name: slideInRight;
   animation-duration: 3s;
 }
 
 .animation2 {
-  animation-name: slideInRight;
+  animation-name: slideInLeft;
   animation-duration: 5s;
+}
+
+@keyframes slideInRight {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  100% {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .challenges-container1 > p:first-child {
