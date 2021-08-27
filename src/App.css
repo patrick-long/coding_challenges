@@ -133,8 +133,9 @@ footer > h4 {
   }
 
   75% {
-    font-size: 10%;
-    
+    font-size: 100%;
+    margin-right: 25%;
+    width: 150%;
   }
 
   100% {
