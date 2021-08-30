@@ -36,7 +36,12 @@
 }
 
 .challenges-container2 {
-  background: url('imgs/coding_challenges_wallpaper2.jpeg') no-repeat center center fixed;
+  background: url('imgs/coding_challenges_bg2.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.challenges-container3 {
+  background: url('imgs/coding_challenges_bg3.jpeg') no-repeat center center fixed;
   background-size: cover;
 }
 
