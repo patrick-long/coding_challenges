@@ -45,6 +45,11 @@
   background-size: cover;
 }
 
+.challenges-container4 {
+  background: url('imgs/coding_challenges_bg4.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 .challenge-container {
   display: flex;
   flex-direction: column;
