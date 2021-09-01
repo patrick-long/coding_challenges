@@ -8,9 +8,10 @@ const MinMax = () => {
     });
 
     const minMaxFunction = (str) => {
-        const arr = str.split('');
+        const arr = str.split(', ');
         if (arr.length > 0) {
-            return [Math.min(...arr), Math.max(...arr)];
+            const result = [Math.min(...arr), Math.max(...arr)];
+            return `${result}`;
         };
     };
 
