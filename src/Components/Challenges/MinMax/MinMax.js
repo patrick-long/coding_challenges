@@ -2,6 +2,11 @@ import { useState } from 'react';
 
 const MinMax = () => {
 
+    const [state, setState] = useState({
+        input: '',
+        result: ''
+    });
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
@@ -11,13 +16,13 @@ const MinMax = () => {
     
     const handleSubmit = e => {
         e.preventDefault();
-        const challengeResult = camelCasingFunction(state.input);
+        const challengeResult = minMaxFunction(state.input);
         setState(prevState => ({
             input: prevState.input,
             result: challengeResult
         }));
     };
-    
+
     return (
         <div></div>
     )
