@@ -7,6 +7,12 @@ const MinMax = () => {
         result: ''
     });
 
+    const minMaxFunction = (arr) => {
+        if (arr.length > 0) {
+            return [Math.min(...arr), Math.max(...arr)];
+        };
+    };
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
