@@ -15,6 +15,7 @@ import SumDigits from '../Challenges/SumDigits/SumDigits';
 import Arithmetic from '../Challenges/Arithmetic/Arithmetic';
 import IsIsogram from '../Challenges/IsIsogram/IsIsogram';
 import CamelCasing from '../Challenges/CamelCasing/CamelCasing';
+import MinMax from '../Challenges/MinMax/MinMax';
 
 const Main = () => {
   return (
@@ -47,6 +48,7 @@ const Main = () => {
       <Arithmetic />
       <IsIsogram />
       <CamelCasing />
+      <MinMax />
     </div>
     </>
   )
