@@ -89,12 +89,17 @@
   margin: 1rem 0 0 0;
 }
 
+footer {
+  background-color: black;
+}
+
 footer > h4 {
   width: 60%;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   font-size: 1.2rem;
   border-bottom: 1px solid grey;
-  padding-bottom: 0.8rem;
+  padding: 0.8rem 0;
+  color: lightgrey;
 }
 
 .coding-links {
