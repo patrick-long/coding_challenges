@@ -133,7 +133,7 @@ footer > h4 {
 
 .animation2 {
   animation-name: slideInLeft;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 @keyframes slideInRight {
