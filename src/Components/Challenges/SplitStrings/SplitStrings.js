@@ -19,7 +19,7 @@ const SplitStrings = () => {
             matchString[lastElement] = `${matchString[lastElement]}_`;
         };
         
-        return matchString;
+        return `${matchString}`;
       };
 
     const handleChange = e => {
