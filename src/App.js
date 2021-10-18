@@ -2,6 +2,18 @@ import './App.css';
 import Main from './Components/Main/Main';
 
 function App() {
+
+  const isMagicSquare = (num1, num2, num3, num4, num5, num6, num7, num8, num9) => {
+    if (num1+num2+num3 === num1+num5+num9 && num1+num2+num3 === num4+num5+num6 && num1+num2+num3 === num7+num8+num9 && num1+num2+num3 === num3+num5+num7 && num1+num2+num3 === num1+num4+num7 && num1+num2+num3 === num2+num5+num8 && num1+num2+num3 === num3+num6+num9) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
+
+  isMagicSquare(2, 7, 6, 9, 5, 1, 4, 3, 8);
+
+
   return (
     <div className="App">
       <header className="App-header">
