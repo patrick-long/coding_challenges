@@ -16,6 +16,7 @@ import Arithmetic from '../Challenges/Arithmetic/Arithmetic';
 import IsIsogram from '../Challenges/IsIsogram/IsIsogram';
 import CamelCasing from '../Challenges/CamelCasing/CamelCasing';
 import MinMax from '../Challenges/MinMax/MinMax';
+import SplitStrings from '../Challenges/SplitStrings/SplitStrings';
 
 const Main = () => {
   return (
@@ -49,6 +50,7 @@ const Main = () => {
       <IsIsogram />
       <CamelCasing />
       <MinMax />
+      <SplitStrings />
     </div>
     </>
   )
