@@ -7,6 +7,21 @@ const SplitStrings = () => {
         result: ''
     });
 
+    const splitStringsFunction = str => {
+        if (str === '') {
+            return []
+        };
+        
+        const matchString = str.match(/.{1,2}/g);
+        const lastElement = matchString.length - 1;
+        
+        if (matchString[lastElement].length === 1) {
+            matchString[lastElement] = `${matchString[lastElement]}_`;
+        };
+        
+        return matchString;
+      };
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
