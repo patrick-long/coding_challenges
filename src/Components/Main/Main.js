@@ -17,6 +17,7 @@ import IsIsogram from '../Challenges/IsIsogram/IsIsogram';
 import CamelCasing from '../Challenges/CamelCasing/CamelCasing';
 import MinMax from '../Challenges/MinMax/MinMax';
 import SplitStrings from '../Challenges/SplitStrings/SplitStrings';
+import SeriesSum from '../Challenges/SeriesSum/SeriesSum';
 
 const Main = () => {
   return (
@@ -51,6 +52,7 @@ const Main = () => {
       <CamelCasing />
       <MinMax />
       <SplitStrings />
+      <SeriesSum />
     </div>
     </>
   )
