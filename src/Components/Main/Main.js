@@ -18,6 +18,7 @@ import CamelCasing from '../Challenges/CamelCasing/CamelCasing';
 import MinMax from '../Challenges/MinMax/MinMax';
 import SplitStrings from '../Challenges/SplitStrings/SplitStrings';
 import SeriesSum from '../Challenges/SeriesSum/SeriesSum';
+import NextSqaure from '../Challenges/NextSquare/NextSquare';
 
 const Main = () => {
   return (
@@ -53,6 +54,7 @@ const Main = () => {
       <MinMax />
       <SplitStrings />
       <SeriesSum />
+      <NextSqaure />
     </div>
     </>
   )
