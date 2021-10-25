@@ -58,4 +58,4 @@ const NextSquare = () => {
     );
 };
 
-export default NextSqaure;
+export default NextSquare;
