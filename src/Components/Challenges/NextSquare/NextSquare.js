@@ -7,13 +7,29 @@ const NextSquare = () => {
         result: ''
     });
 
-    const findNextSquare = sq => {
+    const findNextSquareFunction = sq => {
         if (Math.sqrt(sq) % 1 === 0) {
             return ( Math.sqrt(sq) + 1 ) * ( Math.sqrt(sq) + 1);
         } else {
             return -1;
         };
-      };
+    };
+
+    const handleChange = e => {
+        setState(prevState => ({
+            ...prevState,
+            [e.target.name]: e.target.value
+        }));
+    };
+    
+    const handleSubmit = e => {
+        e.preventDefault();
+        const challengeResult = findNextSquareFunction(state.input);
+        setState(prevState => ({
+            input: prevState.input,
+            result: challengeResult
+        }));
+    };
 
 
     return (
