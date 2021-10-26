@@ -12,7 +12,7 @@ const SequenceSum = () => {
         let begin = functionArgs[0];
         let end = functionArgs[1];
         let step = functionArgs[2];
-        
+
         if (begin > end) {
             return 0;
         } else if (begin === end) {
@@ -47,7 +47,7 @@ const SequenceSum = () => {
     return (
         <div className="challenge-container">
             <h2 className="challenge-title">Sequence Sum</h2>
-            <p className="challenge-description">Input a string of numbers to find the sequence sum in "num, num, num" format</p>
+            <p className="challenge-description">Input a string of numbers to find the sequence sum in "begin, end, step" format</p>
             <form 
                 className="challenge-form" 
                 onSubmit={handleSubmit}>
