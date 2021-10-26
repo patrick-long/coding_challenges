@@ -7,6 +7,21 @@ const SequenceSum = () => {
         result: ''
     });
 
+    const sequenceSumFunction = (begin, end, step) => {
+        if (begin > end) {
+            return 0;
+        } else if (begin === end) {
+            return begin;
+        }
+        
+        let result = 0;
+        for (let i = begin; i <= end; i += step) {
+            result += i;
+        }
+        
+        return result;
+      };
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
