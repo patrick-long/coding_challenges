@@ -8,6 +8,7 @@ const SequenceSum = () => {
     });
 
     const sequenceSumFunction = (begin, end, step) => {
+        console.log(begin);
         if (begin > end) {
             return 0;
         } else if (begin === end) {

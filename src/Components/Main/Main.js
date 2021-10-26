@@ -19,6 +19,7 @@ import MinMax from '../Challenges/MinMax/MinMax';
 import SplitStrings from '../Challenges/SplitStrings/SplitStrings';
 import SeriesSum from '../Challenges/SeriesSum/SeriesSum';
 import NextSquare from '../Challenges/NextSquare/NextSquare';
+import SequenceSum from '../Challenges/SequenceSum/SequenceSum';
 
 const Main = () => {
   return (
@@ -55,6 +56,7 @@ const Main = () => {
       <SplitStrings />
       <SeriesSum />
       <NextSquare />
+      <SequenceSum />
     </div>
     </>
   )
