@@ -7,8 +7,12 @@ const SequenceSum = () => {
         result: ''
     });
 
-    const sequenceSumFunction = (begin, end, step) => {
-        console.log(begin);
+    const sequenceSumFunction = (str) => {
+        let functionArgs = str.split(', ');
+        let begin = functionArgs[0];
+        let end = functionArgs[1];
+        let step = functionArgs[2];
+        
         if (begin > end) {
             return 0;
         } else if (begin === end) {
