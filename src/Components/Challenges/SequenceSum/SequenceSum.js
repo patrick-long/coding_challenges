@@ -9,9 +9,11 @@ const SequenceSum = () => {
 
     const sequenceSumFunction = (str) => {
         let functionArgs = str.split(', ');
+        console.log(functionArgs);
         let begin = functionArgs[0];
         let end = functionArgs[1];
         let step = functionArgs[2];
+        console.log(begin, end, step);
 
         if (begin > end) {
             return 0;
@@ -20,9 +22,11 @@ const SequenceSum = () => {
         }
         
         let result = 0;
-        for (let i = begin; i <= end; i += step) {
-            result += i;
-        }
+        if (begin && end && step) {
+            for (let i = begin; i <= end; i += step) {
+                result += i;
+            };
+        };
         
         return result;
       };
