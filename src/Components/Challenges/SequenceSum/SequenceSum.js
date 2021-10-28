@@ -9,16 +9,16 @@ const SequenceSum = () => {
 
     const sequenceSumFunction = (str) => {
         let functionArgs = str.split(', ');
-        let begin = functionArgs[0];
-        let end = functionArgs[1];
-        let step = functionArgs[2];
+        let begin = parseInt(functionArgs[0]);
+        let end = parseInt(functionArgs[1]);
+        let step = parseInt(functionArgs[2]);
 
         if (begin > end) {
             return 0;
         } else if (begin === end) {
             return begin;
         }
-        
+
         let result = 0;
         if (begin && end && step) {
             for (let i = begin; i <= end; i += step) {
