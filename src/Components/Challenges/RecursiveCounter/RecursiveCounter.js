@@ -8,16 +8,15 @@ const RecursiveCounter = () => {
     });
 
     const recursiveCounterFunction = (str) => {
-        if (typeof str === 'string') {
-            const userNum = parseInt(str);
-        };
+        const userNum = parseInt(str);
 
-        if (userNum < 0) {
+        if (userNum <= 0) {
             return [];
         };
 
         const numArray = recursiveCounterFunction(userNum - 1);
         numArray.push(userNum);
+        numArray.push(', ');
         return numArray;
     };
 
