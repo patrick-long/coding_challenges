@@ -2,6 +2,11 @@ import { useState } from 'react';
 
 const RecursiveCounter = () => {
 
+    const [state, setState] = useState({
+        input: '',
+        result: ''
+    });
+
 
     return (
         <div className="challenge-container">
