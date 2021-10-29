@@ -7,6 +7,20 @@ const RecursiveCounter = () => {
         result: ''
     });
 
+    const recursiveCounterFunction = (str) => {
+        if (typeof str === 'string') {
+            const userNum = parseInt(str);
+        };
+
+        if (userNum < 0) {
+            return [];
+        };
+
+        const numArray = recursiveCounterFunction(userNum - 1);
+        numArray.push(userNum);
+        return numArray;
+    };
+
     const handleChange = e => {
         setState(prevState => ({
             ...prevState,
