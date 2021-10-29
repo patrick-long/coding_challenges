@@ -20,6 +20,7 @@ import SplitStrings from '../Challenges/SplitStrings/SplitStrings';
 import SeriesSum from '../Challenges/SeriesSum/SeriesSum';
 import NextSquare from '../Challenges/NextSquare/NextSquare';
 import SequenceSum from '../Challenges/SequenceSum/SequenceSum';
+import RecursiveCounter from '../Challenges/RecursiveCounter/RecursiveCounter';
 
 const Main = () => {
   return (
@@ -57,6 +58,7 @@ const Main = () => {
       <SeriesSum />
       <NextSquare />
       <SequenceSum />
+      <RecursiveCounter />
     </div>
     </>
   )
