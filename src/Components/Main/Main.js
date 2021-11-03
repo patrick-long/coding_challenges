@@ -21,6 +21,7 @@ import SeriesSum from '../Challenges/SeriesSum/SeriesSum';
 import NextSquare from '../Challenges/NextSquare/NextSquare';
 import SequenceSum from '../Challenges/SequenceSum/SequenceSum';
 import RecursiveCounter from '../Challenges/RecursiveCounter/RecursiveCounter';
+import LongestWord from '../Challenges/LongestWord/LongestWord';
 
 const Main = () => {
   return (
@@ -59,6 +60,7 @@ const Main = () => {
       <NextSquare />
       <SequenceSum />
       <RecursiveCounter />
+      <LongestWord />
     </div>
     </>
   )
